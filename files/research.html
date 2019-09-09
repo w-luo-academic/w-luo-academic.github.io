@@ -21,18 +21,20 @@
 	</head>
 	<body>
 		<h1>Research</h1>
-		<h3 class="RI_title">Fishnet Statistics for the Strength Distribution of Nacreous Staggered Structures</h3>
+		<h3 class="RI_title">Fishnet Model for the Strength Distribution of Nacreous Staggered Structures</h3>
 		<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';">
 			<img src="../images/nacre_combined.jpg" alt="nacre" width="236" class="ImagesInText">
 			<a href="https://en.wikipedia.org/wiki/Nacre" target="_blank">Nacre</a>, also known as "mother-of-pearl", are widely found in nature. 
 			Its typical "brick-and-mortar" microstructure has inspired lots of robust man-made hierarchical materials. They can achieve high defect insensitivity and fracture toughness. 
-			This project studies the <em><font color=#5500ff>statistical strength distribution</font></em> of the material. Strictly for statistical purposes, 
-			the microstructure of nacre is approximated by a diagonally pulled <em><font color=#5500ff>fishnet</font></em> with quasibrittle links representing the shear bonds between parallel 
+			This project studies the <b><font color=#5500ff>statistical strength distribution</font></b> of the material. Strictly for statistical purposes, 
+			the microstructure of nacre is approximated by a diagonally pulled <b><font color=#5500ff>fishnet</font></b> with quasibrittle links representing the shear bonds between parallel 
 			lamellae (or platelets).
 		</p>
 		
 		<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';">The key idea of the analytical solution is to express the total structural survival probability as a series of survival probabilities corresponding to the disjoint
-		failure events of exactly one link, two links, three links, etc. at the peak load. These added survival probabilities are shown to greatly enhance the strength 
+		failure events of exactly one link, two links, three links, etc. at the peak load.</p>
+		<img src="../images/series_expansion.png" alt="nacre" width="320" hspace="90">
+		<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';">These added survival probabilities are shown to greatly enhance the strength 
 		for the lower tail of the strength distribution (i.e. failure proability), compared to the weakest-link model. The analytical predictions of failure probability are verified by 
 		millions of Monte-Carlo simulations. There existed two basic, analytically tractable, statistical models for the strength of materials and structures: weakest-link model and 
 		fiber bundle model. The fishnet model is shown to be another analytically tractable model that bridges the above two.</p>
@@ -40,16 +42,42 @@
 		
 		<img src="../images/JMPS_1.jpg" alt="JMPS_1" width="900">
 		
-		<h3>Relevant Publications:</h3>
+		<img src="../images/fishnet_distribution.png" alt="JMPS_1" width="900">
+		
+		<h4>Relevant Publications:</h4>
 		<p>
-			[1] Luo, W. and Bažant, Z.P., 2017. Fishnet model for failure probability tail of nacre-like imbricated lamellar materials. 
-			Proceedings of the National Academy of Sciences, 114(49), pp.12900-12905.
-			<a href="../files/PNAS-2017-Luo-12900-5.pdf" target="_blank"> [<font color="red">PDF</font>] </a>
+			[1] <b>Luo, W.</b> and Bažant, Z.P., 2017. <a href="../files/PNAS-2017-Luo-12900-5.pdf" target="_blank"> <font color="brown">
+				Fishnet Model for Failure Probability Tail of Nacre-like Imbricated Lamellar Materials</font></a>. 
+			<em>Proceedings of the National Academy of Sciences</em>, 114(49), pp.12900-12905.
 		<br>
-			[2] Luo, W. and Bažant, Z.P., 2017. Fishnet statistics for probabilistic strength and scaling of nacreous imbricated lamellar materials. 
-			Journal of the Mechanics and Physics of Solids, 109, pp.264-287. 
-			<a href="../files/JMPS-Fishnet-Brittle.pdf" target="_blank"> [<font color="red">PDF</font>] </a>
+			[2] <b>Luo, W.</b> and Bažant, Z.P., 2017. <a href="../files/JMPS-Fishnet-Brittle.pdf" target="_blank"> <font color="brown">
+			Fishnet Statistics for Probabilistic Strength and Scaling of Nacreous Imbricated Lamellar Materials</font></a>.
+			<em>Journal of the Mechanics and Physics of Solids</em>, 109, pp.264-287. 
 		</p>
+		<br>
+		
+		<h3 class="RI_title">Fishnet Model with Order Statistics</h3>
+		<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';">
+		For <b><font color=#5500ff>brittle</font></b> materials like dry nacre, a few terms in the series expansion suffice to guarantee convergence. In this sense, the fishnet model series expansion can be seen 
+		as a perturbation from the weakest-link model. However, it is relatively hard to apply for <b><font color=#5500ff>quasibrittle</font></b> materials whose links exhibits progressive postpeak softening of various steepness. 
+		More widely scattered damages occur before the peak load. This requires more higher-order terms to be considered. 
+		It is, however, very tedious to calculate them and their expressions vary for different geometry and loading conditions. To tackle this problem, the strength distribution of the softening 
+		fishnet is approximated by the order statistics of link strengths:
+		</p>
+		<img src="../images/order_statistics.png" alt="nacre" width="200" hspace="300">
+		<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';">
+		That is to say, it is no longer the weakest link but <b><font color=#5500ff> the <em>k</em>-th weakest link </font></b> that determines the peak load of the whole structure. The order <em>k</em> reflects the extent of 
+		damages right before the maximum load, with it being in itself a discrete random variable. By adjusting the postpeak softening slope (brittleness) of the material, its failure probaility
+		changes significantly, generating huge safety gains at the extreme lower tail of the strength distribution.</p>
+		<img src="../images/order_figs.png" alt="JMPS_1" width="900">
+		
+		<h4>Relevant Publications:</h4>
+		<p>
+			[1] <b>Luo, W.</b> and Bažant, Z.P., 2018. <a href="../files/JMPS-Fishnet model with order statistics.pdf" target="_blank"> <font color="brown">
+				 Fishnet Model with Order Statistics for Tail Probability of Failure of Nacreous Biomimetic Materials with Softening Interlaminar Links</font></a>. 
+			<em> Journal of the Mechanics and Physics of Solids</em>, 121, pp.281-295.
+		</p>
+		<br>
 		
 		<footer>
     		<p>&copy; 2019 Copyright Wen Luo</p>
