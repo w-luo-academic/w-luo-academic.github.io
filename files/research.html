@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<div class="frontpage">
+		<!--<img src="images/Chicago.jpg" alt="frontpage" width="950" class="frontpage">-->
+		<nav>
+    		<ul>
+        		<li><a href="../index.html">Home</a></li>
+        		<li><a href="research.html">Research</a></li>
+				<li><a href="Academic_CV_Wen_Luo.pdf" target="_blank">CV</a> </li>
+				<li><a href="/presentations">Presentations</a></li>
+				<li><a href="https://scholar.google.com/citations?user=c9RKuo8AAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a></li>
+				<li><a href="https://www.researchgate.net/profile/Wen_Luo14" target="_blank">ResearchGate</a></li>
+				<li><a href="contact.html">Contact</a></li>
+    		</ul>
+		</nav>
+	</div>
+	<head>
+		<title>Wen Luo - Northwestern</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="../main.css">
+	</head>
+	<body>
+		<h1>Research</h1>
+		<h3 class="RI_title">Fishnet Model for the Strength Distribution of Nacreous Staggered Structures</h3>
+		<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';">
+			<img src="../images/nacre_combined.jpg" alt="nacre" width="236" class="ImagesInText">
+			<a href="https://en.wikipedia.org/wiki/Nacre" target="_blank">Nacre</a>, also known as "mother-of-pearl", are widely found in nature. 
+			Its typical "brick-and-mortar" microstructure has inspired lots of robust man-made hierarchical materials. They can achieve high defect insensitivity and fracture toughness. 
+			This project studies the <b><font color=#5500ff>statistical strength distribution</font></b> of the material. Strictly for statistical purposes, 
+			the microstructure of nacre is approximated by a diagonally pulled <b><font color=#5500ff>fishnet</font></b> with quasibrittle links representing the shear bonds between parallel 
+			lamellae (or platelets).
+		</p>
+		
+		<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';">The key idea of the analytical solution is to express the total structural survival probability as a series of survival probabilities corresponding to the disjoint
+		failure events of exactly one link, two links, three links, etc. at the peak load.</p>
+		<img src="../images/series_expansion.png" alt="nacre" width="320" hspace="90">
+		<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';">These added survival probabilities are shown to greatly enhance the strength 
+		for the lower tail of the strength distribution (i.e. failure proability), compared to the weakest-link model. The analytical predictions of failure probability are verified by 
+		millions of Monte-Carlo simulations. There existed two basic, analytically tractable, statistical models for the strength of materials and structures: weakest-link model and 
+		fiber bundle model. The fishnet model is shown to be another analytically tractable model that bridges the above two.</p>
+
+		
+		<img src="../images/JMPS_1.jpg" alt="JMPS_1" width="900">
+		
+		<img src="../images/fishnet_distribution.png" alt="JMPS_1" width="900">
+		
+		<h4>Relevant Publications:</h4>
+		<p>
+			[1] <b>Luo, W.</b> and Bažant, Z.P., 2017. <a href="../files/PNAS-2017-Luo-12900-5.pdf" target="_blank"> <font color="brown">
+				Fishnet Model for Failure Probability Tail of Nacre-like Imbricated Lamellar Materials</font></a>. 
+			<em>Proceedings of the National Academy of Sciences</em>, 114(49), pp.12900-12905.
+		<br>
+			[2] <b>Luo, W.</b> and Bažant, Z.P., 2017. <a href="../files/JMPS-Fishnet-Brittle.pdf" target="_blank"> <font color="brown">
+			Fishnet Statistics for Probabilistic Strength and Scaling of Nacreous Imbricated Lamellar Materials</font></a>.
+			<em>Journal of the Mechanics and Physics of Solids</em>, 109, pp.264-287. 
+		</p>
+		<br>
+		
+		<h3 class="RI_title">Fishnet Model with Order Statistics</h3>
+		<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';">
+		For <b><font color=#5500ff>brittle</font></b> materials like dry nacre, a few terms in the series expansion suffice to guarantee convergence. In this sense, the fishnet model series expansion can be seen 
+		as a perturbation from the weakest-link model. However, it is relatively hard to apply for <b><font color=#5500ff>quasibrittle</font></b> materials whose links exhibits progressive postpeak softening of various steepness. 
+		More widely scattered damages occur before the peak load. This requires more higher-order terms to be considered. 
+		It is, however, very tedious to calculate them and their expressions vary for different geometry and loading conditions. To tackle this problem, the strength distribution of the softening 
+		fishnet is approximated by the order statistics of link strengths:
+		</p>
+		<img src="../images/order_statistics.png" alt="nacre" width="200" hspace="300">
+		<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';">
+		That is to say, it is no longer the weakest link but <b><font color=#5500ff> the <em>k</em>-th weakest link </font></b> that determines the peak load of the whole structure. The order <em>k</em> reflects the extent of 
+		damages right before the maximum load, with it being in itself a discrete random variable. By adjusting the postpeak softening slope (brittleness) of the material, its failure probaility
+		changes significantly, generating huge safety gains at the extreme lower tail of the strength distribution.</p>
+		<img src="../images/order_figs.png" alt="JMPS_1" width="900">
+		
+		<h4>Relevant Publications:</h4>
+		<p>
+			[1] <b>Luo, W.</b> and Bažant, Z.P., 2018. <a href="../files/JMPS-Fishnet model with order statistics.pdf" target="_blank"> <font color="brown">
+				 Fishnet Model with Order Statistics for Tail Probability of Failure of Nacreous Biomimetic Materials with Softening Interlaminar Links</font></a>. 
+			<em> Journal of the Mechanics and Physics of Solids</em>, 121, pp.281-295.
+		</p>
+		<br>
+		
+		<h3 class="RI_title">Fishnet Statistical Size Effect</h3>
+		<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';">
+		To reach the extreme lower tail of a probability distribution by histogram testing, one would need millions of repetitions. An ulternative method to infer the material failure probability 
+		from experiments or Monte Carlo simulations is formulated. The solution relies on the <b><font color=#5500ff>median strength size effect</font></b>, which is relatively easy to obtain through lab tests. 
+		It describes the change of nominal strength with increasing structure size. To derive the size effect relation, the geometric scaling of a rectangular fishnet is split into transverse and longitudinal scalings, for each of which a simple scaling rule for the 
+		median strength is established. Proportional combination of both then yields the two-dimensional geometric scaling and its size effect. Compared to the direct estimation 
+		via histogram testing, the size effect method requires only a few (typically about six) tests for each of three or four structure sizes to obtain a tight upper bound on the 
+		failure probability distribution.
+		<figure>
+			<center>
+			<img src="../images/schematic_SE.png" alt="JMPS_1" width="600">
+			<figcaption style="font-family: 'Sans-Serif';">Fig. Schematic showing four geometrically similar fishnets under uniaxial tension</figcaption>
+		</figure>
+		<br>
+		<br>
+		<video width="696" height="264" controls>
+		<source src="../images/F8x16K01.mp4" type=video/mp4>
+		</video>
+		<br>
+		<video width="696" height="264" controls>
+		<source src="../images/F32x64K01.mp4" type=video/mp4>
+		</video>
+		
+		<h4>Relevant Publications:</h4>
+		<p>
+			[1] <b>Luo, W.</b> and Bažant, Z.P., 2019. <a href="../files/JAM-Fishnet statistical size effect.pdf" target="_blank"> <font color="brown">
+				 Fishnet Statistical Size Effect on Strength of Materials with Nacreous Microstructure</font></a>. 
+			<em>Journal of Applied Mechanics</em>, 86(8), p.081006.
+		</p>
+		<br>
+		
+		<footer>
+    		<p>&copy; 2019 Copyright Wen Luo</p>
+		</footer>
+	</body>
+</html>
