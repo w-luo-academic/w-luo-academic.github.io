@@ -41,13 +41,8 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-<<<<<<< HEAD
     font-size: 0.9em;
-    line-height: 1.5em;
-=======
-    font-size: 1.0em;
-    line-height: 1.2em;
->>>>>>> 02fc8795b8c5505d9c28c5c0c8b810a854d79f18
+    line-height: 2em;
     color: #333;
 }
 footer {
