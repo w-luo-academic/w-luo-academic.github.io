@@ -1,17 +1,19 @@
+  
 .frontpage {
-	height: 280px;
-	background-color: white;
-	background-image: url("images/Chicago.jpg");
+	height: 40px;
+	background-color: #F0F0F0;
 	background-size: 100%;
 	background-repeat: no-repeat;
+    opacity:80%
 }
+
 body {
     margin: 50px auto;
     width: 55%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 260px 0px;
+    padding: 10px 10px;
     list-style: none;
     font-weight: bold;
 }
@@ -36,6 +38,7 @@ a:hover {
     text-decoration: underline;
 	color: #333;
 }
+
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -89,7 +92,7 @@ img {
 
 .slider, .slider-wrapper {
   position: relative;
-  height: 400px;
+  height: 500px;
 }
 
 .slide {
@@ -144,12 +147,11 @@ img {
 }
 
 .slider-nav__label {
-  font-size: 13px;
   background-color: gray;
   display: block;
-  height: 2em;
-  line-height: 2em;
-  width: 2em;
+  height: 0.8em;
+  line-height: 0.8em;
+  width: 0.8em;
   text-align: center;
   border-radius: 90%;
   color: white;
@@ -160,8 +162,8 @@ img {
 .slider-nav__label:hover,
 .slider-nav__label:active,
 .slider-nav__label:focus {
-  background-color: gray;
-  color: Black;
+  background-color: #EF713A;
+  color: black;
 }
 [wp_ad_camp_1]
 

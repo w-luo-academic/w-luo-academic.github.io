@@ -4,13 +4,13 @@
 		<!--<img src="images/Chicago.jpg" alt="frontpage" width="950" class="frontpage">-->
 		<nav>
     		<ul>
-        		<li><a href="index.html">Home</a></li>
-        		<li><a href="files/research.html">Research</a></li>
-				<li><a href="files/teaching.html">Teaching</a></li>
+        		<li><a href="index.html" style="color:#FF5E00">Home</a></li>
+        		<li><a href="files/research.html" style="color:#FF5E00">Research</a></li>
+				<li><a href="files/teaching.html" style="color:#FF5E00">Teaching</a></li>
 				<!-- <li><a href="files/Academic_CV_Wen_Luo.pdf" target="_blank">CV</a> </li> -->
-				<li><a href="https://scholar.google.com/citations?user=c9RKuo8AAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a></li>
-				<li><a href="https://www.researchgate.net/profile/Wen_Luo14" target="_blank">ResearchGate</a></li>
-				<li><a href="files/contact.html">Contact</a></li>
+				<li><a href="https://scholar.google.com/citations?user=c9RKuo8AAAAJ&hl=en&oi=sra" target="_blank" style="color:#FF5E00">Google Scholar</a></li>
+				<li><a href="https://www.researchgate.net/profile/Wen_Luo14" target="_blank" style="color:#FF5E00">ResearchGate</a></li>
+				<li><a href="files/contact.html" style="color:#FF5E00">Contact</a></li>
     		</ul>
 		</nav>
 	</div>
@@ -27,7 +27,7 @@
 				a.appendChild(r);
 			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 		</script>
-		<title>Wen Luo - Northwestern</title>
+		<title>Wen Luo - Caltech</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
@@ -36,10 +36,10 @@
     		<div class="Introduction">
         		<h1>Wen Luo</h1>
 				<h2 class="RI_title">Introduction</h2>
-				<img src="images/YellowStone.jpg" alt="portrait" width="236" class="portrait">
+				<img src="images/Wen-Luo_caltech.jpg" alt="portrait" width="260" class="portrait">
 				<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';"> 
 					I'm a P.h.D candidate in the Program of <!--<a href="https://www.mccormick.northwestern.edu/theoretical-applied-mechanics/" target="_blank"> </a>-->
-					Theoretical and Applied Mechanics (TAM) at Northwestern University. My research has been focusing on studying the <b><font color=#5500ff>failure probability
+					Theoretical and Applied Mechanics (TAM) at Northwestern University. My research has been focusing on studying the <b><font color=EF713A>failure probability
 					of hierarchical and architected materials</font></b> with the help of finite element Monte Carlo simulations. Under the guidance of my 
 					thesis advisor, Prof. <a href="http://www.civil.northwestern.edu/people/bazant/" target="_blank">Zdeněk P. Bažant</a>, I have established the 
 					habbit of always trying to seek the analytical solution with the help of numerical and experimental methods. Though being challenging, it is rewarding 
@@ -62,12 +62,10 @@
 				<ul><font color=#333333>
 
 				<ul class = "researchInterests">
-					<li>Structure reliability</li>
-					<li>Stability and nonlinear behaviors of structures and materials</li>
-					<li>Origami and Kirigami originated from post-buckling behavior of structures</li>
-					<li>Fracture and size effect of quasibrittle materials</li>
-					<li>Numerical simulation of crack propagation in stochastic heterogeneous materials</li>
-					<li>Novel testing methods for the lower tail strength distribution of materials and structures</li>
+					<li>Structure reliability (especially strength statistics)</li>
+					<li>Stability of structures and buckling inspired origami</li>
+					<li>Crack propagation in stochastic heterogeneous materials</li>
+                    <li>Mechanics of composits</li>
 					<font color=#333333>
 				</ul>
     		</div>
@@ -77,20 +75,30 @@
 		
 		<div class="slider-wrapper">
 			<div class="slider">
-				<input type="radio" name="slider" class="trigger" id="one" checked="checked" />
+				<input type="radio" name="slider" class="trigger" id="slide_1" checked="checked" />
+				<div class="slide">
+					<figure class="slide-figure">
+						<img class="slide-img" src="images/Paper_coiling.jpg" />
+					</figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+
+				<input type="radio" name="slider" class="trigger" id="slide_2" />
 				<div class="slide">
 					<figure class="slide-figure">
 						<img class="slide-img" src="images/img_beam_LDS.png" />
-					</figure><!-- .slide-figure -->
-				</div><!-- .slide -->
-				<input type="radio" name="slider" class="trigger" id="two" />
-				<div class="slide">
-					<figure class="slide-figure">
-						<img class="slide-img" src="images/fishnet_2.png" />
 						<!-- .slide <figcaption class="slide-caption"><p>...</p></figcaption> -->
 					</figure><!-- .slide-figure -->
 				</div><!-- .slide -->
-				<input type="radio" name="slider" class="trigger" id="three" />
+
+				<input type="radio" name="slider" class="trigger" id="slide_3" />
+				<div class="slide">
+				    <figure class="slide-figure">
+						<img class="slide-img" src="images/fishnet_3.png" />
+						<!--<figcaption class="slide-caption"><p>...</p></figcaption> -->
+				    </figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+
+                <input type="radio" name="slider" class="trigger" id="slide_4" />
 				<div class="slide">
 				    <figure class="slide-figure">
 						<img class="slide-img" src="images/img_lattice_2.png" />
@@ -99,9 +107,10 @@
 				</div><!-- .slide -->
 			</div><!-- .slider -->
 		<ul class="slider-nav">
-		<li class="slider-nav__item"><label class="slider-nav__label" for="one">1</label></li>
-		<li class="slider-nav__item"><label class="slider-nav__label" for="two">2</label></li>
-		<li class="slider-nav__item"><label class="slider-nav__label" for="three">3</label></li>
+		<li class="slider-nav__item"><label class="slider-nav__label" for="slide_1"> </label></li>
+		<li class="slider-nav__item"><label class="slider-nav__label" for="slide_2"> </label></li>
+		<li class="slider-nav__item"><label class="slider-nav__label" for="slide_3"> </label></li>
+        <li class="slider-nav__item"><label class="slider-nav__label" for="slide_4"> </label></li>
 		</ul><!-- .slider-nav -->
 		</div><!-- .slider-wrapper -->
 		
@@ -111,7 +120,7 @@
 		<br>
 		<br>
 		<footer>
-    		<p>&copy; 2019 Copyright Wen Luo</p>
+    		<p>&copy; 2021 Copyright Wen Luo</p>
 		</footer>
 	</body>
 </html>
