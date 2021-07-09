@@ -4,13 +4,13 @@
 		<!--<img src="images/Chicago.jpg" alt="frontpage" width="950" class="frontpage">-->
 		<nav>
     		<ul>
-        		<li><a href="index.html" style="color:#FF5E00; font-size:1vw">Home</a></li>
-        		<li><a href="files/research.html" style="color:#FF5E00; font-size:1vw">Research</a></li>
-				<li><a href="files/teaching.html" style="color:#FF5E00; font-size:1vw">Teaching</a></li>
+        		<li><a href="index.html" id="nav_item">Home</a></li>
+        		<li><a href="files/research.html" id="nav_item">Research</a></li>
+				<li><a href="files/teaching.html" id="nav_item">Teaching</a></li>
 				<!-- <li><a href="files/Academic_CV_Wen_Luo.pdf" target="_blank">CV</a> </li> -->
-				<li><a href="https://scholar.google.com/citations?user=c9RKuo8AAAAJ&hl=en&oi=sra" target="_blank" style="color:#FF5E00; font-size:1vw">Google Scholar</a></li>
-				<li><a href="https://www.researchgate.net/profile/Wen_Luo14" target="_blank" style="color:#FF5E00; font-size:1vw">ResearchGate</a></li>
-				<li><a href="files/contact.html" style="color:#FF5E00; font-size:1vw">Contact</a></li>
+				<li><a href="https://scholar.google.com/citations?user=c9RKuo8AAAAJ&hl=en&oi=sra" target="_blank" id="nav_item">Google Scholar</a></li>
+				<li><a href="https://www.researchgate.net/profile/Wen_Luo14" target="_blank" id="nav_item">ResearchGate</a></li>
+				<li><a href="files/contact.html" id="nav_item">Contact</a></li>
     		</ul>
 		</nav>
 	</div>
@@ -41,7 +41,7 @@
 				<img src="images/Wen-Luo_caltech.jpg" alt="portrait" width="260" class="portrait">
 				<p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';"> 
 					I am a postdoctoral researcher in the Space Structure Lab at California Institute of Technology (Caltech), working under the direction of Prof. <a href="http://www.pellegrino.caltech.edu/" target="_blank"> Sergio Pellegrino</a>. 
-                    I am currently studying the <b><font color=EF713A>Propagating Instabilities in Thin-walled Deployable Structures During Coiling</font></b> -  a phenomenon that has been widely observed when packaging deployable structures but not fully understood.
+                    I am currently studying the <b><font color=EF713A>Propagating Instabilities in Thin-walled Deployable Structures During Coiling</font></b> -  a phenomenon that has been widely observed but not fully understood when packaging deployable structures.
                     I came up with a theory that uncovers the underlying physics of the buckle formation and propagation. With the insights of this theory, we can curb the growth of the buckles and hence decrease the likelihood of coiling damage.
                 </p>
                 <p style="font-family:'Helvetica', 'Arial', 'Sans-Serif';"> 
@@ -68,7 +68,7 @@
 
 				<ul><font color=#333333>
 
-				<ul class = "researchInterests">
+				<ul>
 					<li>Structure reliability (especially strength statistics)</li>
 					<li>Stability of structures and buckling inspired origami</li>
 					<li>Crack propagation in stochastic heterogeneous materials</li>
@@ -82,14 +82,22 @@
 		
         <div class="slider-wrapper">
 		    <div class="slider">
-			    <input type="radio" name="slider" class="trigger" id="slide_1" checked="checked" />
+                <input type="radio" name="slider" class="trigger" id="slide_1" checked="checked" />
+			    <div class="slide">
+				    <figure class="slide-figure">
+					    <img class="slide-img" src="images/img_lattice_2.png" />
+					    <!--<figcaption class="slide-caption"><p>...</p></figcaption> -->
+				    </figure><!-- .slide-figure -->
+			    </div><!-- .slide -->
+
+			    <input type="radio" name="slider" class="trigger" id="slide_2" />
 			    <div class="slide">
 				    <figure class="slide-figure">
 					    <img class="slide-img" src="images/Paper_coiling.jpg" />
 				    </figure><!-- .slide-figure -->
 			    </div><!-- .slide -->
 
-			    <input type="radio" name="slider" class="trigger" id="slide_2" />
+			    <input type="radio" name="slider" class="trigger" id="slide_3" />
 			    <div class="slide">
 				    <figure class="slide-figure">
 					    <img class="slide-img" src="images/img_beam_LDS.png" />
@@ -97,7 +105,7 @@
 				    </figure><!-- .slide-figure -->
 			    </div><!-- .slide -->
 
-			    <input type="radio" name="slider" class="trigger" id="slide_3" />
+			    <input type="radio" name="slider" class="trigger" id="slide_4" />
 			    <div class="slide">
 				    <figure class="slide-figure">
 					    <img class="slide-img" src="images/fishnet_3.png" />
@@ -105,13 +113,7 @@
 				    </figure><!-- .slide-figure -->
 			    </div><!-- .slide -->
 
-                <input type="radio" name="slider" class="trigger" id="slide_4" />
-			    <div class="slide">
-				    <figure class="slide-figure">
-					    <img class="slide-img" src="images/img_lattice_2.png" />
-					    <!--<figcaption class="slide-caption"><p>...</p></figcaption> -->
-				    </figure><!-- .slide-figure -->
-			    </div><!-- .slide -->
+                
 		    </div><!-- .slider -->
 	    <ul class="slider-nav">
 	    <li class="slider-nav__item"><label class="slider-nav__label" for="slide_1"> </label></li>
