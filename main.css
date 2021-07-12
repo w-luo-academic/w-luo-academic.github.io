@@ -73,6 +73,8 @@ ul.posts {
 .portrait {
 	float:right;
 	margin:0 0 20px 60px;
+    max-width: 36%;
+    height: auto;
 }
 
 .ImagesInText {
@@ -100,7 +102,7 @@ img {
 
 .slider, .slider-wrapper {
   position: relative;
-  height: 500px;
+  height: 15vw;
 }
 
 .slide {
@@ -130,55 +132,56 @@ img {
   margin: 0;
 }
 
-.slide-caption {
-  position: absolute;
-  bottom: 30%;
-  width: calc(100% - 1rem);
-  color: white;
-  text-align: center;
-  left: 50%;
-}
 
 .trigger:checked + .slide {
   z-index: 6000;
   opacity: 1;
 }
 
+
 .slider-nav {
   width: 100%;
   text-align: center;
-  margin: 1rem -25px;
+  margin: 0rem -25px;
 }
 
 .slider-nav__item {
   display: inline-block;
 }
 
-.slider-nav__label {
-  background-color: gray;
-  display: block;
-  height: 0.8em;
-  line-height: 0.8em;
-  width: 0.8em;
-  text-align: center;
-  border-radius: 90%;
-  color: white;
-  cursor: pointer;
-  transition: background-color .25s, color .25s ease-in-out;
-}
 
-.slider-nav__label:hover,
-.slider-nav__label:active,
-.slider-nav__label:focus {
+.slider-nav__label:hover {
   background-color: #EF713A;
   color: black;
 }
-[wp_ad_camp_1]
+
+
+.slider-nav__item {
+  display: inline-block;
+  height:0.1vw;
+  margin-left:0.2vw;
+  margin-right:0.2vw;
+}
+
+.slider-nav__label {
+  background-color: #BEBEBE;
+  display: block;
+  height: 0.4em;
+  line-height: 0.8em;
+  width: 4.8em;
+  text-align: center;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.active{
+  background-color: black;
+}
 
 RESPONSIVENESS
 @media only screen and (min-width: 1024px) {
   .slider, .slider-wrapper {
-    height: 480px;
+    height: 25%;
   }
 
   .slide-caption {
@@ -204,214 +207,3 @@ RESPONSIVENESS
     height: auto;
   }
 }
-
-=======
-  
-.frontpage {
-	height: 2vw;
-    background-color: #F5F5F5;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    opacity:80%;
-    padding-top:0vw;
-    padding-bottom:0.6vw;
-    border: 2px solid #6D6D6D;
-    border-radius: 1vw;
-}
-
-body {
-    margin: 50px auto;
-    width: 55%;
-}
-
-
-
-nav ul li, footer ul li {
-    display:inline;
-    list-style-type: none;
-    margin-left: -1.5vw;
-    margin-right: 2.5vw;
-}
-
-
-a {
-    text-decoration: underline;
-	color: #333;
-}
-
-
-#nav_item {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: bold;
-    color:#FF5E00; 
-    font-size:1vw;
-}
-
-
-ul li { 
-	padding: 0.3vw 0vw; 
-	font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: bold;
-}
-
-
-a:hover {
-    text-decoration: underline;
-	color: #333;
-}
-
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 0.9em;
-    line-height: 2em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-.portrait {
-	float:right;
-	margin:0 0 20px 60px;
-}
-
-.ImagesInText {
-	float:right;
-	margin:0 0 10px 30px;
-}
-
-.lattice {
-	float:middle;
-}
-
-.RI_title {
-	font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.trigger {
-  display: none;
-}
-
-.slider, .slider-wrapper {
-  position: relative;
-  height: 500px;
-}
-
-.slide {
-  background-color: white;
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 5000;
-  opacity: 0;
-  transition: opacity 1.0s ease-in-out;
-}
-
-.slide-img {
-  filter: brightness(100%);
-  height: 100%;
-  object-fit: fill;
-  display: block;
-  margin: 0 auto;
-}
-
-.slide-figure {
-  height: 100%;
-  position: relative;
-  margin: 0;
-}
-
-.slide-caption {
-  position: absolute;
-  bottom: 30%;
-  width: calc(100% - 1rem);
-  color: white;
-  text-align: center;
-  left: 50%;
-}
-
-.trigger:checked + .slide {
-  z-index: 6000;
-  opacity: 1;
-}
-
-.slider-nav {
-  width: 100%;
-  text-align: center;
-  margin: 1rem -25px;
-}
-
-.slider-nav__item {
-  display: inline-block;
-}
-
-.slider-nav__label {
-  background-color: gray;
-  display: block;
-  height: 0.8em;
-  line-height: 0.8em;
-  width: 0.8em;
-  text-align: center;
-  border-radius: 90%;
-  color: white;
-  cursor: pointer;
-  transition: background-color .25s, color .25s ease-in-out;
-}
-
-.slider-nav__label:hover,
-.slider-nav__label:active,
-.slider-nav__label:focus {
-  background-color: #EF713A;
-  color: black;
-}
-[wp_ad_camp_1]
-
-RESPONSIVENESS
-@media only screen and (min-width: 1024px) {
-  .slider, .slider-wrapper {
-    height: 480px;
-  }
-
-  .slide-caption {
-    width: 65%;
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .slider, .slider-wrapper {
-    height: 360px;
-  }
-
-  .slide-caption {
-    width: 75%;
-    font-size: 1.25rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .slide-img {
-    width: 100%;
-    height: auto;
-  }
-}
-
->>>>>>> 2df328ec1ad9494943f975e4b1eeb3de368cde9d
