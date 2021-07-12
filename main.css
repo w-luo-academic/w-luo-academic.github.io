@@ -174,9 +174,6 @@ img {
   cursor: pointer;
 }
 
-.active{
-  background-color: black;
-}
 
 RESPONSIVENESS
 @media only screen and (min-width: 1024px) {
