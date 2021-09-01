@@ -227,24 +227,24 @@ RESPONSIVENESS
 @media only screen and (max-width: 1023px) {
   body {
     margin: 50px auto;
-    width: 90%;
+    width: 85%;
     }
 
   #nav_item {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: bold;
     color:#FF5E00; 
-    font-size:2.3vw;
+    font-size:2.1vw;
 
   }
   #column1 {
   float: left;
-  width: 62vw;
+  width: 60vw;
   }
   #column2 {
     float: right;
     width: 20vw;
-    margin: 0 0 10px 10px;
+    margin: 0 0 5px 5px;
   }
 
     #TRAC {
@@ -281,7 +281,10 @@ RESPONSIVENESS
       border-radius: 10%;
       cursor: pointer;
     }
-
+    ul {
+      margin: 2vw;
+      padding: 0;
+    }
     ul li { 
 	padding: 1.2vw 0vw; 
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
