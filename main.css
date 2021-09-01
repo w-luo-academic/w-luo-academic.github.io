@@ -35,7 +35,7 @@ a {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: bold;
     color:#FF5E00; 
-    font-size:1vw;
+    font-size:1.0vw;
 }
 
 
@@ -206,11 +206,6 @@ img {
 
 
 RESPONSIVENESS
-@media only screen and (min-width: 1024px) {
-  .slider, .slider-wrapper {
-    height: 25%;
-  }
-
   .slide-caption {
     width: 65%;
     font-size: 1.5rem;
@@ -233,4 +228,53 @@ RESPONSIVENESS
     width: 100%;
     height: auto;
   }
+
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    margin: 50px auto;
+    width: 90%;
+    }
+
+  #nav_item {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: bold;
+    color:#FF5E00; 
+    font-size:2.3vw;
+
+  }
+  #column1 {
+  float: left;
+  width: 62vw;
+  }
+  #column2 {
+    float: right;
+    width: 20vw;
+    margin: 0 0 10px 10px;
+  }
+
+    #TRAC {
+        float: left;
+        width: 80vw;
+        padding: 5px;
+    }
+
+    #Buckle {
+        float: left;
+        width: 65vw;
+        padding: 25px;
+    }
+
+    .portrait {
+	float:none;
+	margin:0 0 10px 10px;
+    max-width: 50%;
+    height: auto;
+    }
+
+    .slider, .slider-wrapper {
+      position: relative;
+      height: 25vw;
+    }
 }
