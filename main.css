@@ -223,15 +223,8 @@ RESPONSIVENESS
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .slide-img {
-    width: 100%;
-    height: auto;
-  }
 
-}
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1023px) {
   body {
     margin: 50px auto;
     width: 90%;
@@ -288,4 +281,10 @@ RESPONSIVENESS
       border-radius: 10%;
       cursor: pointer;
     }
+
+    ul li { 
+	padding: 1.2vw 0vw; 
+	font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: bold;
+}
 }
