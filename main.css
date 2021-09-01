@@ -20,8 +20,8 @@ body {
 nav ul li, footer ul li {
     display:inline;
     list-style-type: none;
-    margin-left: -0.5vw;
-    margin-right: 2.5vw;
+    margin-left: 0.5vw;
+    margin-right: 1.5vw;
 }
 
 
