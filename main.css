@@ -79,12 +79,39 @@ ul.posts {
 
 .ImagesInText {
 	float:right;
-	margin:0 0 10px 30px;
+	margin:0 0 10px 10px;
 }
 
-#Fishnet_Gif {
-	float:right;
-	margin:0 0px 10px 10px;
+#TRAC {
+  float: left;
+  width: 28vw;
+  padding: 5px;
+}
+
+#Buckle {
+  float: right;
+  width: 23vw;
+  padding: 5px;
+}
+
+
+#column1 {
+  float: left;
+  width: 40vw;
+  padding: 5px;
+}
+#column2 {
+  float: right;
+  width: 12vw;
+  padding: 2px;
+  margin:0 0 10px 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .lattice {
