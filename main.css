@@ -282,12 +282,12 @@ RESPONSIVENESS
       cursor: pointer;
     }
     ul {
-      margin: 2vw;
+      margin: 1.2vw;
       padding: 0;
     }
     ul li { 
 	padding: 1.2vw 0vw; 
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: bold;
-}
+    }
 }
