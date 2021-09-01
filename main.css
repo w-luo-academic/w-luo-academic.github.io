@@ -269,7 +269,7 @@ RESPONSIVENESS
     .portrait {
 	float:none;
 	margin:0 0 10px 10px;
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     }
 
@@ -283,7 +283,7 @@ RESPONSIVENESS
       display: block;
       height: 0.4em;
       line-height: 0.8em;
-      width: 2.8em;
+      width: 2.4em;
       text-align: center;
       border-radius: 10%;
       cursor: pointer;
